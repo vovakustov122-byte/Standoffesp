@@ -25,7 +25,7 @@ jobs:
           ./gradlew assembleDebug
           
       - name: Upload APK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: esp-app
           path: app/build/outputs/apk/debug/
