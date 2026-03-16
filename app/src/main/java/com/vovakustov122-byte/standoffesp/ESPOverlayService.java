@@ -1,4 +1,4 @@
-package com.vovakustov122-byte.standoffesp;
+package com.vovakustov122_byte.standoffesp;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
