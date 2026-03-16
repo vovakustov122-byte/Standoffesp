@@ -45,7 +45,7 @@ APP_NAME="Gradle"
 APP_BASE_NAME=${0##*/}
 
 # Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
-DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
+DEFAULT_JVM_OPTS="-Xmx64m -Xms64m"
 
 # Use the maximum available, or set MAX_FD != -1 to use that value.
 MAX_FD=maximum
@@ -111,10 +111,8 @@ if ! "$cygwin" && ! "$darwin" && ! "$nonstop" ; then
 fi
 
 # Collect all arguments for the java command, stacking in reverse order to eventually pass to java.
-# We try to keep the "fileorder" and "directory" based arguments together.
-
 # The Gradle wrapper is found in the gradle distribution.
-CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
+CLASSPATH="$APP_HOME/gradle/wrapper/gradle-wrapper.jar"
 
 # Collect arguments in a way that works with POSIX
 while [ "$#" -gt 0 ]; do
